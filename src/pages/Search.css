@@ -1,0 +1,16 @@
+.search-page {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 60vh;
+}
+
+.search-page__count {
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+}
+
+.search-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}

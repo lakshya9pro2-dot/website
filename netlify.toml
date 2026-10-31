@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback so /movies, /shows, /search etc. work on refresh.
+# (Edge functions run before redirects, so /api/* is still handled by the worker.)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,11 @@
+.my-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.my-list__empty {
+  padding-bottom: 60px;
+  color: var(--ink-muted);
+}
